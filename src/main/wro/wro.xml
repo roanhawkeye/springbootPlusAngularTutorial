@@ -6,5 +6,6 @@
     <js>webjar:angularjs/@angularjs.version@/angular.min.js</js>
     <js>webjar:angularjs/@angularjs.version@/angular-route.min.js</js>
     <js>webjar:angularjs/@angularjs.version@/angular-cookies.min.js</js>
+    <js>webjar:angularjs/@angularjs.version@/angular-route.min.js</js>
    </group>
 </groups>
