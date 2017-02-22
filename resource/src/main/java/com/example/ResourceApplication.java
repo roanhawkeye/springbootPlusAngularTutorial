@@ -24,6 +24,7 @@ public class ResourceApplication extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception{
+		http.httpBasic().disable();
 		http.cors().and().authorizeRequests().anyRequest().authenticated();
 	}
 
