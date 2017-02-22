@@ -25,7 +25,7 @@ public class SpringPlusAngularTutorialApplication {
 		return user;
 	}
 	
-	@RequestMapping("/resource")
+//	@RequestMapping("/resource")
 	public Map<String, Object> home(){
 		Map<String, Object> model = new HashMap<>();
 		model.put("id", UUID.randomUUID().toString());
