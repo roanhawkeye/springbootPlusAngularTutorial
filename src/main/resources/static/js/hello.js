@@ -26,7 +26,7 @@ angular.module('hello', ['ngRoute'])
 	  var authenticate = function(credentials, callback){
 		  var headers = credentials ? { authorization : "Basic " + btoa(credentials.username + ":" + credentials.password)} : {};
 		  
-		  $htpp.get('user', {headers : headers}).then(function(response){
+		  $http.get('user', {headers : headers}).then(function(response){
 			  if(response.data.name){
 				  $rootScope.authenticated = true;
 			  }else{
@@ -53,5 +53,12 @@ angular.module('hello', ['ngRoute'])
 			  }
 		  })
 	  };
+	  
+	  self.logout = function(){
+		  $http.post('logout', {}).finally(function(){
+			  $rootScope.authenticated = false;
+			  $location.path("/");
+		  });
+	  }
 	  
   });
