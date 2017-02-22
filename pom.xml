@@ -19,6 +19,7 @@
 	</parent>
 
 	<dependencies>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -33,6 +34,15 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+		  <groupId>org.springframework.session</groupId>
+		  <artifactId>spring-session</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		
+		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>angularjs</artifactId>
 			<version>${angularjs.version}</version>
@@ -44,6 +54,7 @@
 			<version>${jasmine.version}</version>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<properties>
